@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">LOGO</div>
+            <ul class="nav-links">
+                <li><a href="#about" class="active">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="contact-btn">Contact Me</button>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>I'm John Smith<br>A <span class="highlight">UI/UX Designer</span></h1>
+                    <p>I help businesses grow by crafting amazing web experiences. If you're looking for a designer and developer that likes to get stuff done, let's talk.</p>
+                    <div class="hero-btns">
+                        <a href="#contact" class="primary-btn">Contact Me</a>
+                        <a href="#portfolio" class="secondary-btn">See My Work</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/hero-image.svg" alt="John Smith">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2>About Me</h2>
+                    <p>I design products that are more than pretty. I make them usable.</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="assets/about-image.svg" alt="About John Smith">
+                    </div>
+                    <div class="about-text">
+                        <h3>Professional UI/UX Designer</h3>
+                        <p>I'm a UI/UX designer with a passion for creating beautiful and functional digital experiences. Over the past 5 years, I've worked with a variety of clients from startups to large corporations.</p>
+                        <p>My approach to design is both analytical and creative. I believe in thorough research and understanding user needs to create designs that not only look good but also solve real problems.</p>
+                        <div class="stats">
+                            <div class="stat-item">
+                                <h4>5+</h4>
+                                <p>Years of Experience</p>
+                            </div>
+                            <div class="stat-item">
+                                <h4>100+</h4>
+                                <p>Projects Completed</p>
+                            </div>
+                            <div class="stat-item">
+                                <h4>50+</h4>
+                                <p>Happy Clients</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2>My Services</h2>
+                    <p>I offer a wide range of services to help your business grow</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="assets/icons/ui-design.svg" alt="UI Design">
+                        </div>
+                        <h3>UI Design</h3>
+                        <p>Creating beautiful interfaces that are intuitive and visually appealing.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="assets/icons/ux-design.svg" alt="UX Design">
+                        </div>
+                        <h3>UX Design</h3>
+                        <p>Crafting seamless user experiences that delight and engage users.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="assets/icons/web-development.svg" alt="Web Development">
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>Building responsive websites with clean, efficient code.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="assets/icons/mobile-app.svg" alt="Mobile App Design">
+                        </div>
+                        <h3>Mobile App Design</h3>
+                        <p>Designing mobile applications with a focus on usability and engagement.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <div class="section-header">
+                    <h2>My Portfolio</h2>
+                    <p>Check out some of my recent work</p>
+                </div>
+                <div class="portfolio-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="ui">UI Design</button>
+                    <button class="filter-btn" data-filter="ux">UX Design</button>
+                    <button class="filter-btn" data-filter="web">Web Design</button>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item" data-category="ui">
+                        <img src="assets/portfolio/project1.svg" alt="Project 1">
+                        <div class="portfolio-overlay">
+                            <h3>Project Title</h3>
+                            <p>UI Design</p>
+                            <a href="#" class="view-project">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="ux">
+                        <img src="assets/portfolio/project2.svg" alt="Project 2">
+                        <div class="portfolio-overlay">
+                            <h3>Project Title</h3>
+                            <p>UX Design</p>
+                            <a href="#" class="view-project">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="web">
+                        <img src="assets/portfolio/project3.svg" alt="Project 3">
+                        <div class="portfolio-overlay">
+                            <h3>Project Title</h3>
+                            <p>Web Design</p>
+                            <a href="#" class="view-project">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="ui">
+                        <img src="assets/portfolio/project4.svg" alt="Project 4">
+                        <div class="portfolio-overlay">
+                            <h3>Project Title</h3>
+                            <p>UI Design</p>
+                            <a href="#" class="view-project">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="ux">
+                        <img src="assets/portfolio/project5.svg" alt="Project 5">
+                        <div class="portfolio-overlay">
+                            <h3>Project Title</h3>
+                            <p>UX Design</p>
+                            <a href="#" class="view-project">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="web">
+                        <img src="assets/portfolio/project6.svg" alt="Project 6">
+                        <div class="portfolio-overlay">
+                            <h3>Project Title</h3>
+                            <p>Web Design</p>
+                            <a href="#" class="view-project">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Testimonials</h2>
+                    <p>What my clients say about me</p>
+                </div>
+                <div class="testimonial-slider">
+                    <div class="testimonial-item">
+                        <div class="client-info">
+                            <img src="assets/testimonials/client1.svg" alt="Client 1">
+                            <div>
+                                <h3>Jane Doe</h3>
+                                <p>CEO, Company Name</p>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Working with John was a fantastic experience. He understood our requirements perfectly and delivered a design that exceeded our expectations."</p>
+                        <div class="rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Contact Me</h2>
+                    <p>Let's work together on your next project</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <img src="assets/icons/email.svg" alt="Email">
+                            </div>
+                            <div>
+                                <h3>Email</h3>
+                                <p>info@yourwebsite.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <img src="assets/icons/phone.svg" alt="Phone">
+                            </div>
+                            <div>
+                                <h3>Phone</h3>
+                                <p>+1 (123) 456-7890</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <img src="assets/icons/location.svg" alt="Location">
+                            </div>
+                            <div>
+                                <h3>Location</h3>
+                                <p>New York, NY, USA</p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-icon"><img src="assets/icons/facebook.svg" alt="Facebook"></a>
+                            <a href="#" class="social-icon"><img src="assets/icons/twitter.svg" alt="Twitter"></a>
+                            <a href="#" class="social-icon"><img src="assets/icons/instagram.svg" alt="Instagram"></a>
+                            <a href="#" class="social-icon"><img src="assets/icons/linkedin.svg" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form action="#" method="POST">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">LOGO</div>
+                    <p>Professional UI/UX Designer</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p>info@yourwebsite.com</p>
+                    <p>+1 (123) 456-7890</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><img src="assets/icons/facebook.svg" alt="Facebook"></a>
+                        <a href="#" class="social-icon"><img src="assets/icons/twitter.svg" alt="Twitter"></a>
+                        <a href="#" class="social-icon"><img src="assets/icons/instagram.svg" alt="Instagram"></a>
+                        <a href="#" class="social-icon"><img src="assets/icons/linkedin.svg" alt="LinkedIn"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Your Name. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
